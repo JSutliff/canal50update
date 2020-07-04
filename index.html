@@ -20,6 +20,10 @@
     <meta property="og:description" content="Description Here" />
 
     <!-- Styles -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Canal 50 | Phoenix TV</title>
   </head>
@@ -35,6 +39,7 @@
         <div>
           <div>
             <ul id="toggleMenu">
+              <img src="./canal-50-phoenix-logo.png" alt="" />
               <li><a href="#">News</a></li>
               <li><a href="#">Channels</a></li>
               <li><a href="#">Contact</a></li>
@@ -51,17 +56,22 @@
       <!-- Top Nav -->
       <nav id="top-nav" class="hide-responsive">
         <ul id="top-nav-list">
-          <li class="top-nav-item"><a href="#">News</a></li>
-          <li class="top-nav-item"><a href="#">Channels</a></li>
-          <li class="top-nav-item"><a href="#">Contact</a></li>
-          <li class="top-nav-item"><a href="#">Advertise</a></li>
+          <img
+            src="./canal-50-phoenix-logo.png"
+            id="header-img"
+            alt="canal-50-phoenix-logo"
+          />
+          <li class="top-nav-item grow"><a href="#">News</a></li>
+          <li class="top-nav-item grow"><a href="#">Channels</a></li>
+          <li class="top-nav-item grow"><a href="#">Contact</a></li>
+          <li class="top-nav-item grow"><a href="#">Advertise</a></li>
         </ul>
       </nav>
       <!-- END TOP NAV -->
       <div class="container showcase-inner">
         <h1>Canal 50 Phoenix</h1>
-        <h2>Turn On The Excitement</h2>
-        <a href="#about" class="cta-btn">Advertise With Us!</a>
+        <h2 id="tag-line">Turn On The Excitement</h2>
+        <a href="#about" class="cta-btn shadow">Advertise With Us!</a>
       </div>
     </header>
 
@@ -200,5 +210,9 @@
       </div>
     </section>
     <!-- END CHANNELS -->
+
+    <!-- Contact -->
+
+    <!-- END CONTACT -->
   </body>
 </html>

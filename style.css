@@ -2,7 +2,7 @@
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
   /* --overlay-color: rgba(24, 39, 51, 0.85); */
-  --overlay-color: rgb(47, 21, 80, 0.9);
+  --overlay-color: rgb(47, 21, 80, 0.99);
   --menu-speed: 0.75s;
 }
 
@@ -13,9 +13,19 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Merriweather", serif;
   line-height: 1.4;
   background-color: rgb(5, 6, 23);
+}
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.2);
+}
+
+.shadow {
+  box-shadow: 2px 8px 12px 1px rgba(86, 117, 116, 0.45);
 }
 
 /* Hamburger Menu */
@@ -180,6 +190,10 @@ body {
 .hide-responsive {
   display: none;
 }
+
+#toggleMenu img {
+  margin-bottom: 0px;
+}
 /* END HAMBURGER MENU */
 
 /* SHowcase */
@@ -222,22 +236,34 @@ body {
 }
 
 .showcase h1 {
-  font-size: 4rem;
-  color: #333333;
+  font-size: 3.5rem;
+  color: white;
 }
 
 .cta-btn {
   display: inline-block;
-  padding: 10px 30px;
-  background: var(--primary-color);
-  color: #fff;
+  padding: 0.75rem 1rem;
+  background: white;
+  color: rgb(47, 21, 77);
   border-radius: 5px;
   border: solid #fff 1px;
   margin-top: 25px;
   opacity: 0.7;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
+#header-img {
+  width: 250px;
+  margin-top: -90px;
+  /* margin-bottom: -50px; */
+}
+
+#tag-line {
+  /* margin-top: -60px; */
+  font-size: 2rem;
+  font-style: italic;
+}
 /* END SHOWCASE */
 
 /* Channels */
@@ -277,6 +303,10 @@ body {
 @media only screen and (min-width: 700px) {
   .hide-responsive {
     display: block;
+  }
+
+  .showcase h1 {
+    font-size: 5rem;
   }
 
   #top-nav {
