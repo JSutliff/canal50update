@@ -253,6 +253,14 @@ body {
   font-size: 1.5rem;
 }
 
+.cta-btn:hover {
+  background-color: lightgray;
+}
+
+.cta-btn:active {
+  transform: translateY(4px);
+}
+
 #header-img {
   width: 250px;
   margin-top: -90px;
@@ -274,6 +282,10 @@ body {
   margin-top: 50px;
 }
 
+#channel-display a:link {
+  color: rgb(85, 26, 139);
+}
+
 .channel {
   color: white;
   margin-bottom: 100px;
@@ -283,6 +295,8 @@ body {
   font-size: 2rem;
   margin-top: 25px;
   margin-bottom: 25px;
+  color: white;
+  text-decoration: none;
 }
 
 .channel-description {
@@ -300,6 +314,85 @@ body {
   color: white;
   font-size: 2rem;
 }
+
+form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  border: 0;
+}
+
+form h2 {
+  margin-bottom: 50px;
+  font-size: 3rem;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form input:focus {
+  outline: none !important;
+  border-color: purple;
+  box-shadow: 0 0 10px purple;
+}
+
+form textarea {
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form textarea:focus {
+  outline: none !important;
+  border-color: purple;
+  box-shadow: 0 0 10px purple;
+}
+
+form button {
+  margin-bottom: 10px;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: rgb(198, 195, 208);
+  color: rgb(47, 21, 77);
+  border: 0;
+  font-size: 1.5rem;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: rgb(157, 156, 160);
+}
+
+form button:active {
+  transform: translateY(4px);
+}
+
+#contact-form {
+  margin-bottom: 100px;
+}
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: lightgray;
+  margin-bottom: 50px;
+}
+
+#built-by a {
+  color: goldenrod;
+}
+
+/* MEIDA QUERY */
 @media only screen and (min-width: 700px) {
   .hide-responsive {
     display: block;
